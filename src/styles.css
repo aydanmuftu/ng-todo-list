@@ -1,17 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: fixed;
-  overflow: hidden;
-  background-color: #1b1b1b;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    overflow: hidden;
 }
 
 * {
-  color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;;
+    font-family: "Roboto", sans-serif;
+}
+
+input.label-input {
+    border: none;
+    flex-grow: 1;
+    font-size: 16px;
+    padding-left: 4px;
+    border-radius: 3px;
+    background-color: #e5e5e5;
+}
+
+input.label-input:focus {
+    outline: none;
 }

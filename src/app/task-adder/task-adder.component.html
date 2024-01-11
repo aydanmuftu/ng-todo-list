@@ -1,5 +1,11 @@
-<input type="text" placeholder="Task..." maxlength="40" [(ngModel)]="value"/>
+<input
+    class="label-input"
+    type="text"
+    placeholder="Task..."
+    maxlength="40"
+    [(ngModel)]="value"
+/>
 <button (click)="taskService.add(value); value = ''">
-  <span class="material-symbols-sharp">add</span>
-  <span>ADD</span>
+    <span class="material-symbols-sharp">add</span>
+    <span>ADD</span>
 </button>

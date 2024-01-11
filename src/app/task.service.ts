@@ -77,7 +77,7 @@ export class Task {
      * @constructor
      * @param {string} label
      */
-    constructor(readonly label: string) {}
+    constructor(public label: string) {}
     /**
      * Get the state.
      *

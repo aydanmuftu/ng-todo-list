@@ -1,7 +1,16 @@
-<span>
-  <input type="checkbox" [value]="task.isChecked" (click)="taskService.check(task.label)"/>
-</span>
-<span>{{ task.label }}</span>
-<button (click)="taskService.remove(task.label)">
-  <span class="material-symbols-sharp">delete</span>
+<input
+    type="checkbox"
+    [value]="task.isChecked"
+    (click)="taskService.check(task.label)"
+/>
+@if(isInEditMod) {
+<input type="text" maxlength="40" [(ngModel)]="task.label" />
+<button class="material-symbols-sharp" (click)="isInEditMod = false">
+    edit
+</button>
+} @else {
+<span (click)="isInEditMod = true">{{ task.label }}</span>
+}
+<button class="material-symbols-sharp" (click)="taskService.remove(task.label)">
+    delete
 </button>

@@ -1,55 +1,43 @@
 :host {
-  gap: 8px;
-  display: flex;
-  flex-direction: row;
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
 }
 
-input, button {
-  height: 40px;
-  border: none;
-  border-radius: 20px;
-}
-
-input {
-  flex-grow: 1;
-  font-size: 16px;
-  color: #FFFFFF;
-  padding-left: 20px;
-  background-color: #3b3b3b;
-}
-
-input:focus {
-  outline: none;
-  caret-color: #FFFFFF;
+input,
+button {
+    height: 40px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 button {
-  gap: 8px;
-  display: flex;
-  padding: 0 16px;
-  color: #1b1b1b;
-  flex-direction: row;
-  align-items: center;
-  transition: all ease-in .5s;
-  background: linear-gradient(0deg,#8922cc, #f3073d);
+    gap: 8px;
+    border: none;
+    display: flex;
+    padding: 0 16px;
+    color: #ffffff;
+    border-radius: 3px;
+    flex-direction: row;
+    align-items: center;
+    transition: all ease-in 0.5s;
+    background: linear-gradient(0deg, #8922cc, #f3073d);
 }
 
 button:hover {
-  opacity: 90%;
-  color: #FFFFFF;
+    opacity: 90%;
 }
 
 button:active {
-  opacity: 80%;
-  transition: none;
-  outline: solid 1px #FFFFFF;
+    opacity: 80%;
+    transition: none;
+    outline: solid 1px #ffffff;
 }
 
 button > span:not(.material-symbols-sharp) {
-  font-size: 16px;
-  font-weight: bold;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 button > span.material-symbols-sharp {
-  font-size: 24px;
+    font-size: 24px;
 }

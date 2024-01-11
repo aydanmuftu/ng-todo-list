@@ -1,5 +1,7 @@
+import { CommonModule } from '@angular/common';
 import { Task, TaskService } from '../../task.service';
 import { Component, Input } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 /**
  * Task item.
  *
@@ -8,9 +10,9 @@ import { Component, Input } from '@angular/core';
  * @typedef {TaskItemComponent}
  */
 @Component({
-    imports: [],
     standalone: true,
     selector: 'app-task-item',
+    imports: [CommonModule, FormsModule],
     templateUrl: './task-item.component.html',
     styleUrl: './task-item.component.css',
 })
@@ -21,6 +23,13 @@ export class TaskItemComponent {
      * @type {!Task}
      */
     @Input() task!: Task;
+    /**
+     * State of edition.
+     *
+     * @protected
+     * @type {boolean}
+     */
+    protected isInEditMod: boolean = false;
     /**
      * Creates an instance of TaskItemComponent.
      *
