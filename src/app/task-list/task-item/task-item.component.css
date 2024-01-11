@@ -1,0 +1,64 @@
+:host {
+  gap: 8px;
+  width: 95%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #3b3b3b;
+}
+
+:host > span:nth-child(1) {
+  width: 40px;
+  display: flex;
+  height: inherit;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg,rgba(137, 34, 204, 50%), rgba(243, 7, 61, 50%));
+}
+
+span > input {
+  background-color: #5b5b5b
+}
+
+span:nth-child(2) {
+  flex-grow: 1;
+}
+
+button {
+  gap: 8px;
+  width: 40px;
+  opacity: 60%;
+  border: none;
+  display: flex;
+  height: inherit;
+  color: #1b1b1b;
+  flex-direction: row;
+  align-items: center;
+  border-radius: inherit;
+  justify-content: center;
+  background-color: #5b5b5b;
+  transition: all ease-in .5s;
+}
+
+button:hover {
+  opacity: 70%;
+  color: #FFFFFF;
+}
+
+button:active {
+  opacity: 100%;
+  transition: none;
+  outline: solid 1px #FFFFFF;
+}
+
+button > span:not(.material-symbols-sharp) {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+button > span.material-symbols-sharp {
+  font-size: 16px;
+}

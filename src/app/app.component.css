@@ -1,0 +1,22 @@
+:host {
+  top: 0;
+  left: 0;
+  right: 0;
+  gap: 32px;
+  bottom: 0;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3em;
+  color: transparent;
+  background: linear-gradient(-25deg,#8922cc, #f3073d);
+  background-clip: text;
+}
+
+:host > *:not(h1) {
+  width: 30%;
+}

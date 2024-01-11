@@ -1,0 +1,3 @@
+@for (task of taskService.tasks(); track $index) {
+<app-task-item [task]="task" />
+}

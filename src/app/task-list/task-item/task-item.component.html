@@ -1,0 +1,7 @@
+<span>
+  <input type="checkbox" [value]="task.isChecked" (click)="taskService.check(task.label)"/>
+</span>
+<span>{{ task.label }}</span>
+<button (click)="taskService.remove(task.label)">
+  <span class="material-symbols-sharp">delete</span>
+</button>
